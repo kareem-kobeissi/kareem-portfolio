@@ -1,9 +1,3 @@
-const nextConfig = {
-  output: "export",
-  trailingSlash: true,
-  images: {
-    unoptimized: true,
-  },
-};
+const nextConfig = {};
 
 export default nextConfig;
