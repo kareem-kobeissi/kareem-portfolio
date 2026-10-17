@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kareemm.com/sitemap.xml
