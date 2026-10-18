@@ -183,10 +183,12 @@ export const PROJECTS = [
   },
   {
     name: "TradeVision Company Website",
+    image: "/projects/live/tradevision-group.png",
     description:
       "A responsive company website included among my selected frontend development projects.",
     gradient: ["#0F172A", "#0F766E"],
-    url: "https://github.com/kareem-kobeissi/tradevision-company-website",
+    url: "https://tradevisiongroup.com/",
+    sourceUrl: "https://github.com/kareem-kobeissi/tradevision-company-website",
     tech: ["React", "Vite"],
   },
   {
