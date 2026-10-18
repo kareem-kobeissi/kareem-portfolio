@@ -56,12 +56,14 @@ const About1 = ({ clientHeight }) => {
           className="font-medium text-[2.70rem] md:text-6xl lg:text-[4rem] text-center"
         >
           <span className="about-1 leading-tight">
-            I&apos;m a Full-Stack &amp; Mobile Developer building reliable web
-            applications, cross-platform mobile apps and custom software.{" "}
+            I&apos;m a Full-Stack Developer with 2+ years of experience building
+            and maintaining web and mobile applications, REST APIs and business
+            automation.{" "}
           </span>
           <span className="about-2 leading-tight">
-            I work across architecture, APIs, databases, secure authentication,
-            automation, deployment and ongoing support.{" "}
+            I work across responsive interfaces, backend services, databases,
+            secure authentication, real-time integrations, testing and
+            deployment.{" "}
           </span>
         </h2>
       </div>

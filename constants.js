@@ -1,20 +1,21 @@
 export const METADATA = {
   author: "Kareem Kobeissi",
-  title: "Kareem Kobeissi | Full-Stack & Mobile Developer",
+  title: "Kareem Kobeissi | Full-Stack Developer",
   description:
-    "Portfolio of Kareem Kobeissi, a Lebanon-based Full-Stack and Mobile Developer building web applications, cross-platform mobile apps, custom software, and automation systems.",
+    "Portfolio of Kareem Kobeissi, a Lebanon-based Full-Stack Developer with 2+ years of experience building web and mobile applications, REST APIs, database systems, and business automation.",
   siteUrl: "https://kareemm.com",
   keywords: [
     "Kareem Kobeissi",
     "Full-Stack Developer",
-    "Mobile Developer",
-    "React Native Developer",
+    "Web Developer",
+    "REST API Developer",
     "Angular Developer",
+    "React Developer",
     "ASP.NET Core Developer",
     "Lebanon",
     "Portfolio",
   ].join(", "),
-  image: "/preview.png",
+  image: "/favicon.svg",
   language: "English",
   themeColor: "#000000",
 };
@@ -28,9 +29,9 @@ export const MENULINKS = [
 ];
 
 export const TYPED_STRINGS = [
-  "Full-Stack & Mobile Developer",
-  "I build reliable web and mobile applications",
-  "I create custom software and automation",
+  "Full-Stack Developer",
+  "I build web applications and REST APIs",
+  "I develop database-driven business systems",
 ];
 
 export const SOCIAL_LINKS = [
@@ -46,6 +47,7 @@ export const SKILLS = {
   frontend: [
     "Angular",
     "React.js",
+    "Next.js",
     "JavaScript",
     "TypeScript",
     "HTML",
@@ -53,7 +55,6 @@ export const SKILLS = {
     "Tailwind CSS",
     "Responsive Design",
   ],
-  mobile: ["React Native", "Expo", "Flutter", "Dart"],
   backend: [
     "Node.js",
     "Express.js",
@@ -66,22 +67,50 @@ export const SKILLS = {
     "REST APIs",
   ],
   databases: [
-    "SQL Server",
+    "Microsoft SQL Server",
     "MySQL",
     "MariaDB",
     "PostgreSQL",
     "MongoDB Atlas",
+    "SQL",
   ],
-  other: [
-    "JWT & RBAC",
+  mobile: ["React Native", "Expo", "Flutter", "Dart"],
+  security: [
+    "JWT",
+    "Google OAuth",
+    "Role-Based Access Control",
+    "HMAC Webhooks",
     "Socket.IO",
+    "Meta WhatsApp Cloud API",
+    "OpenAI API",
+    "SMTP",
+    "Third-Party APIs",
+  ],
+  tools: [
+    "Git",
+    "GitHub",
+    "Jira",
+    "Microsoft Teams",
+    "Hostinger",
+    "Render",
+    "VPS",
+    "Cron Jobs",
+    "Cloud Deployment",
+    "Testing & Debugging",
+  ],
+  seo: [
+    "Technical SEO",
+    "Google Search Console",
+    "XML Sitemaps",
+    "Schema.org",
+    "Semantic HTML",
+  ],
+  automation: [
     "TradingView",
     "Pine Script",
     "MetaTrader 5",
-    "Webhooks",
-    "Git",
-    "Jira",
-    "Cloud & VPS",
+    "MQL5",
+    "Telegram Integration",
   ],
 };
 
@@ -89,50 +118,71 @@ export const PROJECTS = [
   {
     name: "Smart Service",
     description:
-      "A bilingual home-service marketplace with customer/provider roles, nearby discovery, live tracking, push notifications, ratings, and smart estimates.",
+      "A customer/provider home-service marketplace with JWT authentication, location-based discovery, real-time updates, tracking, notifications, ratings, and Arabic/English support.",
     gradient: ["#5B21B6", "#2563EB"],
     url: "https://github.com/kareem-kobeissi/SmartServiceApp",
-    tech: ["React Native", "Expo", "Node.js", "MongoDB", "Socket.IO"],
+    tech: ["React Native", "Expo", "Node.js", "Express.js", "MongoDB", "Socket.IO"],
   },
   {
     name: "The Trading Routine",
     description:
-      "A bilingual trading education and digital-products platform with courses, secure accounts, checkout, payment options, and user/admin dashboards.",
+      "A deployed trading education and automation platform with courses, MT5 tools, TradingView indicators, payments, OAuth and OTP, WhatsApp automation, AI-assisted workflows, licensing, admin tools, and SEO.",
     gradient: ["#0F172A", "#334155"],
     url: "https://thetradingroutine.com",
-    tech: ["PHP", "MySQL", "JavaScript", "HTML", "CSS"],
+    sourceUrl: "https://github.com/kareem-kobeissi/TheTradingRoutineWebsite",
+    tech: ["PHP", "MySQL", "Python", "FastAPI", "OpenAI", "WhatsApp API", "MT5"],
   },
   {
-    name: "Sobh W Masa",
+    name: "ERTKAZ Group",
     description:
-      "A custom Arabic/English supermarket storefront with RTL/LTR browsing, search, favorites, inventory controls, promotions, and WhatsApp ordering.",
-    gradient: ["#166534", "#65A30D"],
-    url: null,
-    tech: ["PHP", "MariaDB", "JavaScript", "Tailwind CSS"],
+      "A bilingual Arabic/English corporate website for a consulting firm with RTL support, animated editorial layouts, company profiles, service pages, and static deployment.",
+    gradient: ["#713F12", "#CA8A04"],
+    url: "https://ertkazgroup.com",
+    sourceUrl: "https://github.com/kareem-kobeissi/ertkaz-group-website",
+    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "GSAP"],
   },
   {
-    name: "Ego Clothing Store",
+    name: "Taxi Platte",
     description:
-      "A responsive React storefront developed for a clothing brand and delivered as a public production website.",
+      "A responsive German taxi website with booking and call actions, pricing, service coverage, galleries, reusable PHP components, accessible animations, and Schema.org SEO.",
+    gradient: ["#111827", "#D97706"],
+    url: "https://taxi-wulfrath.de",
+    sourceUrl: "https://github.com/kareem-kobeissi/taxi-company-website-germany",
+    tech: ["PHP", "JavaScript", "Tailwind CSS", "Schema.org", "SEO"],
+  },
+  {
+    name: "Rana Clinic",
+    description:
+      "A responsive dietitian website and online shop with services, courses, cart functionality, client registration and login, testimonials, and contact features.",
+    gradient: ["#14532D", "#16A34A"],
+    url: "https://dietitianranacheaib-mena.online",
+    sourceUrl: "https://github.com/kareem-kobeissi/dietitian-website",
+    tech: ["PHP", "JavaScript", "HTML5", "CSS3", "Responsive Design"],
+  },
+  {
+    name: "RJI World",
+    description:
+      "A bilingual English/Arabic showcase for a fashion, beauty, and media group with brand portfolios, authentication, contact integrations, and responsive design.",
     gradient: ["#831843", "#DB2777"],
-    url: "https://ego-luxury.com/",
-    tech: ["React.js", "CSS"],
+    url: "https://rjiworld.online",
+    sourceUrl: "https://github.com/kareem-kobeissi/klas-boutique-website",
+    tech: ["PHP", "JavaScript", "HTML5", "CSS3", "Arabic RTL"],
   },
   {
-    name: "AI Customer Automation",
+    name: "Music App Using AI",
     description:
-      "An AI-assisted workflow platform with secure accounts, HMAC webhooks, order tracking, email monitoring, approvals, workers, retries, and audit history.",
+      "A music application with authentication, audio playback, favorites, playlists, song uploads, and Cloudinary media storage integration.",
     gradient: ["#312E81", "#7C3AED"],
-    url: null,
-    tech: ["PHP", "MySQL", "Python", "FastAPI", "OpenAI API"],
+    url: "https://github.com/kareem-kobeissi/Music-App-Using-AI",
+    tech: ["Flutter", "FastAPI", "PostgreSQL", "Cloudinary"],
   },
   {
-    name: "Used-Car Dealership",
+    name: "Additional Projects",
     description:
-      "A dealership application with a responsive public site, authentication, protected dashboard, and vehicle, inspection, employee, and settings modules.",
+      "TradeVision Company Website, Clothing Store Website, ChocoSushiGarden System, and ScannerCode Mobile App.",
     gradient: ["#1F2937", "#475569"],
-    url: null,
-    tech: ["Full Stack", "Authentication", "Dashboard", "Database Design"],
+    url: "https://github.com/kareem-kobeissi",
+    tech: ["React", "Vite", "Web", "Mobile", "Business Systems"],
   },
 ];
 
@@ -149,16 +199,16 @@ export const WORK_CONTENTS = [
     items: [
       {
         title: "Full-Stack & Mobile Developer",
-        period: "Jul 2025 — Present · Lebanon / Remote",
+        period: "Jul 2025 - Present | Lebanon / Remote",
         description:
-          "Deliver end-to-end web, mobile, and custom software solutions for local and international clients—from requirements and architecture through deployment, maintenance, and post-launch support.",
-        content: workCard("Web · Mobile · APIs · Automation"),
+          "Develop and deliver web applications, mobile applications, REST APIs, and custom software for local and international clients. Build responsive interfaces, admin dashboards, backend services, and relational and NoSQL integrations.",
+        content: workCard("Web | Mobile | APIs | Automation"),
       },
       {
-        title: "End-to-End Delivery",
+        title: "Complete Product Delivery",
         description:
-          "Build responsive applications, REST APIs, admin dashboards, relational and NoSQL data layers, secure authentication, role-based access, real-time communication, webhooks, and third-party integrations.",
-        content: workCard("Reliable business software"),
+          "Implement authentication, access controls, real-time updates, webhooks, and third-party integrations while managing requirements, testing, deployment, troubleshooting, maintenance, and post-launch support.",
+        content: workCard("From requirements to support"),
       },
     ],
   },
@@ -168,15 +218,15 @@ export const WORK_CONTENTS = [
     items: [
       {
         title: "TradingView Automation Specialist",
-        period: "Mar 2026 — Present · Lebanon / Remote",
+        period: "Mar 2026 - Present | Lebanon / Remote | Concurrent",
         description:
-          "Develop TradingView indicators and Pine Script alerts with secure HTTPS webhook processing, Telegram notifications, MetaTrader 5 integration, and configurable position-sizing and risk controls.",
-        content: workCard("TradingView · MT5 · Telegram"),
+          "Develop Pine Script indicators and alerts with secure HTTPS webhooks and Telegram notifications. Integrate signals with MetaTrader 5 and risk tools, supporting automation across 9+ trading accounts.",
+        content: workCard("TradingView | MT5 | Telegram"),
       },
       {
-        title: "Real-Time Reliability",
+        title: "Reliable Signal Processing",
         description:
-          "Support centralized automation across 9+ trading accounts using cloud/VPS infrastructure, validation, logging, retries, and robust error handling.",
+          "Improve automated signal handling with validation, logging, retries, and error handling.",
         content: workCard("9+ automated trading accounts"),
       },
     ],
@@ -187,23 +237,23 @@ export const WORK_CONTENTS = [
     items: [
       {
         title: "Full Stack Developer",
-        period: "Dec 2025 — May 2026 · Dubai / Remote",
+        period: "Dec 2025 - May 2026 | Dubai / Remote",
         description:
-          "Developed reusable Angular interfaces and ASP.NET Core backend functionality, integrated REST APIs with authentication and role-based authorization, designed relational data structures, and resolved defects across the stack.",
-        content: workCard("Angular · C# · ASP.NET Core · SQL"),
+          "Developed Angular interfaces and ASP.NET Core backend features for enterprise applications, built authenticated REST APIs with role-based authorization, designed relational database structures, and resolved frontend and backend defects.",
+        content: workCard("Angular | C# | ASP.NET Core | SQL"),
       },
     ],
   },
   {
     title: "Freelance Team",
-    value: "collaborator",
+    value: "collaboration",
     items: [
       {
-        title: "Collaborator",
-        period: "Oct 2024 — Mar 2025 · Ansar / Remote",
+        title: "Web & Mobile Developer",
+        period: "Oct 2024 - Mar 2025 | Ansar / Remote | Concurrent",
         description:
-          "Collaborated with distributed developers on mobile and web projects, implementing responsive interfaces, backend functionality, API and database integrations, bug fixes, testing, and feature improvements tracked in Jira.",
-        content: workCard("Distributed web & mobile delivery"),
+          "Implemented responsive interfaces, backend features, API and database integrations, and bug fixes. Tested across devices and coordinated assigned work with developers using Jira.",
+        content: workCard("Collaborative web & mobile delivery"),
       },
     ],
   },
@@ -213,21 +263,25 @@ export const WORK_CONTENTS = [
     items: [
       {
         title: "Flutter Developer Intern",
-        period: "Jul 2024 — Oct 2024 · Beirut / Remote",
+        period: "Jul 2024 - Oct 2024 | Beirut / Remote",
         description:
-          "Developed responsive Flutter interfaces with reusable widgets, navigation, forms, validation, interactive components, and API/data integrations while strengthening mobile architecture and testing practices.",
-        content: workCard("Flutter · Dart · Cross-platform Mobile"),
+          "Developed Flutter screens and reusable widgets with navigation, forms, validation, and API integrations. Debugged application issues and improved responsive behavior across device sizes.",
+        content: workCard("Flutter | Dart | Cross-platform Mobile"),
       },
     ],
   },
 ];
 
 export const EDUCATION = [
-  "BS in Computer Science — Lebanese International University (2022–2025)",
-  "General Science — Ansar High School (2019–2022)",
+  "Bachelor of Science in Computer Science - Lebanese International University (Oct 2022 - Jun 2025)",
+  "General Science High School Certificate - Ansar High School (2019 - 2022)",
 ];
 
 export const CERTIFICATIONS = [
-  "Spring BootCamp Workshop — CodewithSerah (Feb 2026)",
-  "Certificate of Attendance — IEEE PU Student Branch (Sep 2024)",
+  "Supervised Machine Learning: Regression and Classification - DeepLearning.AI / Stanford University via Coursera (2024)",
+  "Fundamentals of Cybersecurity - YouBee.ai (2023)",
+  "CCNAv7: Introduction to Networks - Cisco Networking Academy (2024)",
+  "Get Connected - Cisco Networking Academy (2022)",
+  "League of Logics Workshop - Phoenicia University (2024)",
+  "Certificate of Attendance - IEEE PU Student Branch (2024)",
 ];

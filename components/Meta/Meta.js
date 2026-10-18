@@ -43,7 +43,7 @@ const Meta = () => (
           "@type": "Person",
           name: METADATA.author,
           url: METADATA.siteUrl,
-          jobTitle: "Full-Stack & Mobile Developer",
+          jobTitle: "Full-Stack Developer",
           email: "mailto:kbkareem31@gmail.com",
           telephone: "+96170831913",
           address: {

@@ -14,7 +14,7 @@ const tiltOptions = {
 const ProjectTile = ({ project, classes, isDesktop }) => {
   const projectCard = useRef(null);
 
-  const { name, description, gradient, url, tech } = project;
+  const { name, description, gradient, url, sourceUrl, tech } = project;
 
   let additionalClasses = "";
   if (classes) {
@@ -28,11 +28,8 @@ const ProjectTile = ({ project, classes, isDesktop }) => {
   }, []);
 
   return (
-    <a
-      href={url || undefined}
-      className={`overflow-hidden rounded-3xl snap-start link ${additionalClasses}`}
-      target="_blank"
-      rel="noreferrer"
+    <article
+      className={`overflow-hidden rounded-3xl snap-start ${additionalClasses}`}
       style={{
         maxWidth: isDesktop ? "calc(100vw - 2rem)" : "calc(100vw - 4rem)",
         flex: "1 0 auto",
@@ -76,14 +73,25 @@ const ProjectTile = ({ project, classes, isDesktop }) => {
             </span>
           ))}
         </div>
-        <p
-          className="text-lg z-10 tracking-wide font-medium text-white transform-gpu"
-          style={{ transform: "translateZ(0.8rem)" }}
-        >
-          {description}
-        </p>
+        <div className="z-10 transform-gpu" style={{ transform: "translateZ(0.8rem)" }}>
+          <p className="text-lg tracking-wide font-medium text-white">
+            {description}
+          </p>
+          <div className="mt-4 flex gap-4 font-mono text-sm">
+            {url && (
+              <a href={url} target="_blank" rel="noreferrer" className="link underline">
+                {sourceUrl ? "Live site" : "View project"}
+              </a>
+            )}
+            {sourceUrl && (
+              <a href={sourceUrl} target="_blank" rel="noreferrer" className="link underline">
+                GitHub
+              </a>
+            )}
+          </div>
+        </div>
       </div>
-    </a>
+    </article>
   );
 };
 

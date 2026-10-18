@@ -5,10 +5,13 @@ import { MENULINKS, SKILLS } from "../../constants";
 
 const labels = {
   frontend: "Frontend",
-  mobile: "Mobile",
   backend: "Backend & APIs",
   databases: "Databases",
-  other: "Security, Automation & Delivery",
+  mobile: "Mobile",
+  security: "Security & Integrations",
+  tools: "Tools & Delivery",
+  seo: "SEO",
+  automation: "Automation",
 };
 
 const Skills = () => {
