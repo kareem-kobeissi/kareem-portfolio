@@ -14,7 +14,7 @@ const tiltOptions = {
 const ProjectTile = ({ project, classes, isDesktop }) => {
   const projectCard = useRef(null);
 
-  const { name, description, gradient, url, sourceUrl, tech } = project;
+  const { name, image, description, gradient, url, sourceUrl, tech } = project;
 
   let additionalClasses = "";
   if (classes) {
@@ -44,10 +44,17 @@ const ProjectTile = ({ project, classes, isDesktop }) => {
         }}
       >
         <Image
-          src="/project-bg.svg"
-          alt=""
-          className="absolute w-full h-full top-0 left-0 opacity-20 rounded-3xl"
+          src={image}
+          alt={`${name} homepage`}
+          className="absolute inset-0 h-full w-full rounded-3xl object-cover"
           fill
+          sizes="(max-width: 768px) 100vw, 608px"
+        />
+        <div
+          className="absolute inset-0 rounded-3xl"
+          style={{
+            background: `linear-gradient(180deg, rgba(0,0,0,0.45) 0%, ${gradient[0]}ee 100%)`,
+          }}
         />
         {!isDesktop && (
           <div

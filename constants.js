@@ -116,15 +116,8 @@ export const SKILLS = {
 
 export const PROJECTS = [
   {
-    name: "Smart Service",
-    description:
-      "A customer/provider home-service marketplace with JWT authentication, location-based discovery, real-time updates, tracking, notifications, ratings, and Arabic/English support.",
-    gradient: ["#5B21B6", "#2563EB"],
-    url: "https://github.com/kareem-kobeissi/SmartServiceApp",
-    tech: ["React Native", "Expo", "Node.js", "Express.js", "MongoDB", "Socket.IO"],
-  },
-  {
     name: "The Trading Routine",
+    image: "/projects/live/trading-routine.png",
     description:
       "A deployed trading education and automation platform with courses, MT5 tools, TradingView indicators, payments, OAuth and OTP, WhatsApp automation, AI-assisted workflows, licensing, admin tools, and SEO.",
     gradient: ["#0F172A", "#334155"],
@@ -134,6 +127,7 @@ export const PROJECTS = [
   },
   {
     name: "ERTKAZ Group",
+    image: "/projects/live/ertkaz-group.png",
     description:
       "A bilingual Arabic/English corporate website for a consulting firm with RTL support, animated editorial layouts, company profiles, service pages, and static deployment.",
     gradient: ["#713F12", "#CA8A04"],
@@ -143,6 +137,7 @@ export const PROJECTS = [
   },
   {
     name: "Taxi Platte",
+    image: "/projects/live/taxi-platte.png",
     description:
       "A responsive German taxi website with booking and call actions, pricing, service coverage, galleries, reusable PHP components, accessible animations, and Schema.org SEO.",
     gradient: ["#111827", "#D97706"],
@@ -152,6 +147,7 @@ export const PROJECTS = [
   },
   {
     name: "Rana Clinic",
+    image: "/projects/live/rana-clinic.png",
     description:
       "A responsive dietitian website and online shop with services, courses, cart functionality, client registration and login, testimonials, and contact features.",
     gradient: ["#14532D", "#16A34A"],
@@ -161,28 +157,13 @@ export const PROJECTS = [
   },
   {
     name: "RJI World",
+    image: "/projects/live/rji-world.png",
     description:
       "A bilingual English/Arabic showcase for a fashion, beauty, and media group with brand portfolios, authentication, contact integrations, and responsive design.",
     gradient: ["#831843", "#DB2777"],
     url: "https://rjiworld.online",
     sourceUrl: "https://github.com/kareem-kobeissi/klas-boutique-website",
     tech: ["PHP", "JavaScript", "HTML5", "CSS3", "Arabic RTL"],
-  },
-  {
-    name: "Music App Using AI",
-    description:
-      "A music application with authentication, audio playback, favorites, playlists, song uploads, and Cloudinary media storage integration.",
-    gradient: ["#312E81", "#7C3AED"],
-    url: "https://github.com/kareem-kobeissi/Music-App-Using-AI",
-    tech: ["Flutter", "FastAPI", "PostgreSQL", "Cloudinary"],
-  },
-  {
-    name: "Additional Projects",
-    description:
-      "TradeVision Company Website, Clothing Store Website, ChocoSushiGarden System, and ScannerCode Mobile App.",
-    gradient: ["#1F2937", "#475569"],
-    url: "https://github.com/kareem-kobeissi",
-    tech: ["React", "Vite", "Web", "Mobile", "Business Systems"],
   },
 ];
 
