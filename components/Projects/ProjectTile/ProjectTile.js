@@ -43,13 +43,22 @@ const ProjectTile = ({ project, classes, isDesktop }) => {
           background: `linear-gradient(90deg, ${gradient[0]} 0%, ${gradient[1]} 100%)`,
         }}
       >
-        <Image
-          src={image}
-          alt={`${name} homepage`}
-          className="absolute inset-0 h-full w-full rounded-3xl object-cover"
-          fill
-          sizes="(max-width: 768px) 100vw, 608px"
-        />
+        {image ? (
+          <Image
+            src={image}
+            alt={`${name} homepage`}
+            className="absolute inset-0 h-full w-full rounded-3xl object-cover"
+            fill
+            sizes="(max-width: 768px) 100vw, 608px"
+          />
+        ) : (
+          <Image
+            src="/project-bg.svg"
+            alt=""
+            className="absolute inset-0 h-full w-full rounded-3xl object-cover opacity-30"
+            fill
+          />
+        )}
         <div
           className="absolute inset-0 rounded-3xl"
           style={{

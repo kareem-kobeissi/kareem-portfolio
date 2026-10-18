@@ -116,6 +116,14 @@ export const SKILLS = {
 
 export const PROJECTS = [
   {
+    name: "Smart Service",
+    description:
+      "A customer/provider home-service marketplace with JWT authentication, location-based provider discovery, real-time updates, tracking, notifications, ratings, and Arabic/English support.",
+    gradient: ["#5B21B6", "#2563EB"],
+    url: "https://github.com/kareem-kobeissi/SmartServiceApp",
+    tech: ["React Native", "Expo", "Node.js", "Express.js", "MongoDB", "Socket.IO"],
+  },
+  {
     name: "The Trading Routine",
     image: "/projects/live/trading-routine.png",
     description:
@@ -164,6 +172,46 @@ export const PROJECTS = [
     url: "https://rjiworld.online",
     sourceUrl: "https://github.com/kareem-kobeissi/klas-boutique-website",
     tech: ["PHP", "JavaScript", "HTML5", "CSS3", "Arabic RTL"],
+  },
+  {
+    name: "Music App Using AI",
+    description:
+      "A music application with user authentication, audio playback, favorites, playlists, song uploads, and Cloudinary media storage integration.",
+    gradient: ["#312E81", "#7C3AED"],
+    url: "https://github.com/kareem-kobeissi/Music-App-Using-AI",
+    tech: ["Flutter", "FastAPI", "PostgreSQL", "Cloudinary"],
+  },
+  {
+    name: "TradeVision Company Website",
+    description:
+      "A responsive company website included among my selected frontend development projects.",
+    gradient: ["#0F172A", "#0F766E"],
+    url: "https://github.com/kareem-kobeissi/tradevision-company-website",
+    tech: ["React", "Vite"],
+  },
+  {
+    name: "Clothing Store Website",
+    description:
+      "A clothing-store web project focused on a responsive product-browsing experience.",
+    gradient: ["#831843", "#DB2777"],
+    url: "https://github.com/kareem-kobeissi/clothing-store-website",
+    tech: ["Web Development", "Responsive Design"],
+  },
+  {
+    name: "ChocoSushiGarden System",
+    description:
+      "A custom business system developed for ChocoSushiGarden.",
+    gradient: ["#78350F", "#B45309"],
+    url: "https://github.com/kareem-kobeissi/ChocoSushiGarden-System",
+    tech: ["Business System", "Full-Stack Development"],
+  },
+  {
+    name: "ScannerCode Mobile App",
+    description:
+      "A mobile application project for scanning and working with codes.",
+    gradient: ["#1E3A8A", "#2563EB"],
+    url: "https://github.com/kareem-kobeissi/ScannerCode_MobileApp",
+    tech: ["Mobile Development", "Code Scanning"],
   },
 ];
 
